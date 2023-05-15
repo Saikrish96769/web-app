@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ngnix
+  labels: 
+    env: test1
+spec:
+  imagePullSecrets:
+    - name: my-ecr-creds
+  containers:
+    - name: ngnix
+      image: 489252116129.dkr.ecr.us-east-1.amazonaws.com/car-wash-private:latest
+      ports:
+      - containerPort: 80
+      imagePullPolicy: Always
+  
+  
