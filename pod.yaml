@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: ngnix
-      image: saikrishna8341/web-app:v86
+      image: saikrishna8341/web-app:v87
       ports:
       - containerPort: 80
       imagePullPolicy: Always
